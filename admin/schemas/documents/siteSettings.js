@@ -14,5 +14,10 @@ export default {
             title: 'Site Title',
             type: 'string'
         },
+        {
+            name: 'seo',
+            title: 'SEO',
+            type: 'openGraph'
+        }
     ],
 }

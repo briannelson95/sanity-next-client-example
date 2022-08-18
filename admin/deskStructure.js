@@ -22,7 +22,7 @@ export default () =>
                         .documentId("siteSettings")
                 ),
             // add visial divider (optional)
-            S.documentTypeListItem("page").title("Pages").icon(HiOutlineDocumentAdd),
             S.divider(),
+            S.documentTypeListItem("page").title("Pages").icon(HiOutlineDocumentAdd),
             ...S.documentTypeListItems().filter(hiddenDocTypes)
         ])

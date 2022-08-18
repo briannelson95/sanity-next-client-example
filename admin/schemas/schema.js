@@ -6,6 +6,9 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
 import page from './documents/page'
+import simpleBlockContent from './objects/simpleBlockContent'
+import mainImage from './objects/mainImage'
+import openGraph from './objects/openGraph'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -17,6 +20,10 @@ export default createSchema({
     /* Your types here! */
     siteSettings,
     page,
-    post
+    post,
+
+    simpleBlockContent,
+    mainImage,
+    openGraph,
   ]),
 })
