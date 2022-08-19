@@ -3,7 +3,11 @@ import { HiOutlineCog, HiOutlineDocumentAdd, HiOutlineHome, HiOutlinePlay } from
 
 // Add schema types to hidden
 const hiddenDocTypes = listItem =>
-    !["siteSettings", "page", ].includes(
+    ![
+        "siteSettings", 
+        "page", 
+        "portfolio" 
+    ].includes(
         listItem.getId()
     );
 
@@ -31,6 +35,20 @@ export default () =>
                 ),
             S.divider(),
             // add visial divider (optional)
-            S.documentTypeListItem("page").title("Pages").icon(HiOutlineDocumentAdd),   
+            S.documentTypeListItem("page").title("Pages").icon(HiOutlineDocumentAdd),
+            S.listItem()
+                .title("Portfolio")
+                .icon(HiOutlinePlay)
+                .child(
+                    S.editor()
+                        .schemaType("portfolio")
+                        .documentId("d7bedd28-a64b-4253-b3a6-8720f632ff87")
+                ),
+                    
+            // S.documentListItem()
+            //     .id("d7bedd28-a64b-4253-b3a6-8720f632ff87")
+            //     .title("Portfolio")
+            //     .schemaType("portfolio")
+            //     .icon(HiOutlinePlay),
             ...S.documentTypeListItems().filter(hiddenDocTypes)
         ])

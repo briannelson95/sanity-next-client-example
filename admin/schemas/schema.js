@@ -11,7 +11,7 @@ import mainImage from './objects/mainImage'
 import openGraph from './objects/openGraph'
 import video from './documents/video'
 import youtube from './objects/youtube'
-import allVideos from './documents/allVideos'
+import portfolio from './documents/portfolio'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -25,7 +25,7 @@ export default createSchema({
     page,
     post,
     video,
-    allVideos,
+    portfolio,
 
     simpleBlockContent,
     mainImage,
