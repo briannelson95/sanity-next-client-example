@@ -9,6 +9,9 @@ import page from './documents/page'
 import simpleBlockContent from './objects/simpleBlockContent'
 import mainImage from './objects/mainImage'
 import openGraph from './objects/openGraph'
+import video from './documents/video'
+import youtube from './objects/youtube'
+import allVideos from './documents/allVideos'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -21,9 +24,12 @@ export default createSchema({
     siteSettings,
     page,
     post,
+    video,
+    allVideos,
 
     simpleBlockContent,
     mainImage,
     openGraph,
+    youtube,
   ]),
 })

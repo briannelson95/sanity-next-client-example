@@ -1,9 +1,9 @@
 import S from "@sanity/desk-tool/structure-builder";
-import { HiOutlineCog, HiOutlineDocumentAdd } from "react-icons/hi";
+import { HiOutlineCog, HiOutlineDocumentAdd, HiOutlineHome, HiOutlinePlay } from "react-icons/hi";
 
 // Add schema types to hidden
 const hiddenDocTypes = listItem =>
-    !["siteSettings", "page"].includes(
+    !["siteSettings", "page", ].includes(
         listItem.getId()
     );
 
@@ -21,8 +21,16 @@ export default () =>
                         .schemaType("siteSettings")
                         .documentId("siteSettings")
                 ),
-            // add visial divider (optional)
+            S.listItem()
+                .title("Homepage")
+                .icon(HiOutlineHome)
+                .child(
+                    S.editor()
+                        .schemaType("page")
+                        .documentId("26346fcb-2f48-4c19-852c-114eba7b2a29")
+                ),
             S.divider(),
-            S.documentTypeListItem("page").title("Pages").icon(HiOutlineDocumentAdd),
+            // add visial divider (optional)
+            S.documentTypeListItem("page").title("Pages").icon(HiOutlineDocumentAdd),   
             ...S.documentTypeListItems().filter(hiddenDocTypes)
         ])
