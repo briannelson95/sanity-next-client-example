@@ -1,0 +1,49 @@
+{
+  "public": true,
+  "name": "sanity-plugin-dashboard-widget-document-list",
+  "version": "0.0.13",
+  "author": "Sanity.io <hello@sanity.io>",
+  "description": "Example dashboard widget for Sanity Content Studio",
+  "homepage": "https://github.com/sanity-io/dashboard-widget-document-list#readme",
+  "keywords": [
+    "sanity",
+    "plugin",
+    "part",
+    "dashboard",
+    "widget",
+    "documents"
+  ],
+  "main": "lib/index.js",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanity-io/dashboard-widget-document-list/issues"
+  },
+  "scripts": {
+    "build": "sanipack build",
+    "test": "sanipack verify",
+    "clean": "rimraf lib",
+    "prebuild": "npm run clean",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanity-io/dashboard-widget-document-list.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-sanity": "^2.1.4",
+    "eslint-plugin-react": "^7.1.0",
+    "rimraf": "^2.7.1",
+    "sanipack": "^1.0.8"
+  },
+  "peerDependencies": {
+    "@sanity/base": ">=1",
+    "react": "^16 || ^17"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "rxjs": "^6.0.0"
+  }
+}

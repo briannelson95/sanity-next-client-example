@@ -15,8 +15,7 @@
     "@sanity/desk-tool",
     "media-library",
     "asset-source-unsplash",
-    "@sanity/vision",
-    "@sanity/dashboard"
+    "dashboard-widget-document-list"
   ],
   "env": {
     "development": {
@@ -37,10 +36,6 @@
     {
       "implements": "part:@sanity/base/document-actions/resolver",
       "path": "resolveDocumentActions.js"
-    },
-    { 
-      "implements": "part:@sanity/dashboard/config", 
-      "path": "./dashboardConfig.js" 
     }
   ]
 }

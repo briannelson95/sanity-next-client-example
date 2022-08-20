@@ -9319,6 +9319,15 @@ sanity-plugin-asset-source-unsplash@^0.2.3:
     react-infinite-scroll-component "^6.1.0"
     react-photo-album "1.10.2"
 
+sanity-plugin-dashboard-widget-document-list@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.npmjs.org/sanity-plugin-dashboard-widget-document-list/-/sanity-plugin-dashboard-widget-document-list-0.0.13.tgz#a2839d82d3ce3ee3d08735877cc13f3ad890de7a"
+  integrity sha512-nePwppkIZ7deU05O+tHqh+tdJ5uCD9bVn/Q/XB1s6z0e93JMGJ5eZAggqPTmCH9GRETUAFthhS5GE4idTQwAfA==
+  dependencies:
+    lodash "^4.17.15"
+    prop-types "^15.7.2"
+    rxjs "^6.0.0"
+
 sanity-plugin-media-library@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npmjs.org/sanity-plugin-media-library/-/sanity-plugin-media-library-2.0.2.tgz"
