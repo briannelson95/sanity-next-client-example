@@ -19,7 +19,7 @@ export default {
         {
             name: 'content',
             title: 'Main Content',
-            type: 'simpleBlockContent'
+            type: 'blockContent'
         },
         {
             name: 'seo',

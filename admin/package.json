@@ -17,6 +17,7 @@
     "@sanity/base": "^2.30.5",
     "@sanity/color-input": "^3.0.0-v3-studio.3",
     "@sanity/core": "^2.30.5",
+    "@sanity/dashboard": "^2.30.5",
     "@sanity/default-layout": "^2.30.5",
     "@sanity/default-login": "^2.30.5",
     "@sanity/desk-tool": "^2.30.5",

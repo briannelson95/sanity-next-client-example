@@ -1,7 +1,6 @@
 import { HiOutlinePencilAlt } from "react-icons/hi";
 
 export default {
-
     name: "post",
     title: "Posts",
     icon: HiOutlinePencilAlt,
@@ -24,6 +23,11 @@ export default {
             }
         },
         {
+            name: 'publishedAt',
+            title: 'Published at',
+            type: 'datetime',
+        },
+        {
             name: "excerpt",
             description:
                 "Write a short pararaph of this post (For SEO Purposes)",
@@ -38,8 +42,7 @@ export default {
         {
             name: "body",
             title: "Body",
-            type: "string",
-            validation: Rule => Rule.required()
+            type: "blockContent",
         },
         {
             name: "mainImage",
