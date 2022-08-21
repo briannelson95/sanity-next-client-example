@@ -4,9 +4,9 @@ import { client } from "../lib/sanity"
 export default function Home({ data }) {
   const pageData = data[0]
   return (
-    <>
+    <main>
       <h1 className="text-2xl font-bold">{pageData.title}</h1>
-    </>
+    </main>
   )
 }
 
