@@ -12,7 +12,7 @@ export default function Home({ data }) {
   ]
   const nav = data.navigation[0].navigation
   for (let i in nav) {
-   console.log(i + ": "+ nav[i])
+   console.log(i + ": "+ nav[i].title)
   }
   return (
     <main>
