@@ -12,4 +12,14 @@ const nextConfig = {
   rewrites: () => [STUDIO_REWRITE],
 }
 
-module.exports = nextConfig;
+module.exports = {
+  nextConfig,
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    },
+  },
+  images: {
+    domains: ['cdn.sanity.io'],
+  },
+};
