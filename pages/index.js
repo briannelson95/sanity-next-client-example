@@ -10,6 +10,10 @@ export default function Home({ data }) {
     {title: data.navigation[0].navigation[1].title}, 
     {title: data.navigation[0].navigation[2].title}
   ]
+  const nav = data.navigation[0]
+  for (let i in nav) {
+   console.log(i + ": "+ nav[i])
+  }
   return (
     <main>
       <Navbar navigation={navData} />
