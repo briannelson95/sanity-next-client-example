@@ -1,10 +1,11 @@
+import Layout from '../components/Layout'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="h-screen bg-white dark:bg-slate-800 dark:text-white">
+    <Layout>
       <Component {...pageProps} />
-    </div>
+    </Layout>
   )
 }
 

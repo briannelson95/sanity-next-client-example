@@ -41,6 +41,19 @@ export default {
                 )
         },
         {
+            name: 'navigation',
+            title: 'Navigation Menu',
+            type: 'array',
+            of: [
+                {
+                    type: 'reference',
+                    to: [
+                        {type: 'page'}
+                    ]
+                }
+            ]
+        },
+        {
             name: 'seo',
             title: 'SEO',
             type: 'openGraph'
