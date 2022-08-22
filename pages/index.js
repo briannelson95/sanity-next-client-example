@@ -4,10 +4,15 @@ import { client } from "../lib/sanity"
 
 export default function Home({ data }) {
   const pageData = data.pageData[0]
-  // console.log(data.navigation[0].navigation)
+  // console.log(data.navigation[0].navigation[0].title)
+  const navData = [
+    {title: data.navigation[0].navigation[0].title}, 
+    {title: data.navigation[0].navigation[1].title}, 
+    {title: data.navigation[0].navigation[2].title}
+  ]
   return (
     <main>
-      {/* <Navbar  */}
+      <Navbar navigation={navData} />
       <h1 className="text-2xl font-bold">{pageData.title}</h1>
     </main>
   )
