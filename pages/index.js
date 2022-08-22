@@ -6,10 +6,10 @@ export default function Home({ data }) {
   const pageData = data.pageData[0]
   // console.log(data.navigation[0].navigation[0].title)
   
-  const navData = []
+  let navData = []
   const nav = data.navigation[0].navigation
   for (let i in nav) {
-    navData.push({title: nav[i].title})
+    navData.push({title: nav[i].title, href: nav[i].slug.current})
   }
 
   return (
