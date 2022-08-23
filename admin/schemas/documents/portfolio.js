@@ -15,8 +15,8 @@ export default {
             name: 'title',
             title: 'Title',
             type: 'string',
-            readOnly: ({ document }) => !document?.publishedOnce,
-            description: "This title can't be changed."
+            // readOnly: ({ document }) => !document?.publishedOnce,
+            description: "Do not change this title."
         },
         {
             name: 'allVideos',

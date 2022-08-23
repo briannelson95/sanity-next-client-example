@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={"../node_modules/next-sanity/dist/next-sanity.esm.js -> @sanity/groq-store":{"id":"../node_modules/next-sanity/dist/next-sanity.esm.js -> @sanity/groq-store","files":["static/chunks/node_modules_sanity_groq-store_dist_browser_groq-store_js.js"]}}
+self.__REACT_LOADABLE_MANIFEST={}

@@ -20,7 +20,7 @@ export default function Blog({ data }) {
     return(
         <main>
             <Navbar navigation={navData} />
-            {pageData.title}
+            <h1 className="text-2xl font-bold">{pageData.title}</h1>
             <section>
                 {blogs.map((item, index) => (
                     <Link key={index} href={`blog/${item.slug.current}`}>

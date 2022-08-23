@@ -15,7 +15,7 @@ export default function Page({ data }) {
     return(
         <main>
             <Navbar navigation={navData} />
-            {pageData.title} <br />
+            <h1 className="text-2xl font-bold">{pageData.title}</h1> <br />
             {contactInfo.email} <br />
             {contactInfo.phone} <br />
         </main>
