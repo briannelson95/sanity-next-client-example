@@ -1,16 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) and [Sanity.io](https://sanity.io/) project. For more documentation on this build, I followed: [How to setup Sanity CMS with Next.js & TailwindCSS](https://www.sanity.io/guides/sanity-nextjs-tailwindcss)
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repo and install dependancies (for both the next app and sanity studio):
 
 ```bash
-npm run dev
-# or
-yarn dev
+yarn install
+# and
+cd admin
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, you can run both the app and the studio from the root:
+```bash
+yarn dev
+# and
+yarn sanity
+```
+*There is a script in package.json for `yarn sanity` that will cd into the admin directory and then runs a sanity start command*
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the frontend next app.
+
+Open [http://localhost:3333](http://localhost:3333) with your browser to see the sanity studio.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
@@ -28,6 +39,8 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
+
+Deploy on Vercel like you would any other NextJS app, the build commands will build out the studio first then will deploy the app. You should be able to access your live studio at `https://yourdomain.com/admin`
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
