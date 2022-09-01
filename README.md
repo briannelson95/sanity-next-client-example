@@ -11,6 +11,14 @@ cd admin
 npm install
 ```
 
+You'll need to initialize a new sanity project inside of `/admin`
+
+```bash
+cd admin
+sanity init
+```
+Follow the Sanity init instructions in your command line
+
 Then, you can run both the app and the studio from the root:
 ```bash
 yarn dev
