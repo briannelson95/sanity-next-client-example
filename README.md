@@ -27,6 +27,14 @@ yarn sanity
 ```
 *There is a script in package.json for `yarn sanity` that will cd into the admin directory and then runs a sanity start command*
 
+Create a .env.local file in the root 
+
+```
+NEXT_PUBLIC_SANITY_PROJECT_ID=YOUR_PROJECT_ID
+NEXT_PUBLIC_SANITY_DATASET=YOUR_DATASET
+```
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the frontend next app.
 
 Open [http://localhost:3333](http://localhost:3333) with your browser to see the sanity studio.
@@ -49,6 +57,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Deploy on Vercel
 
 Deploy on Vercel like you would any other NextJS app, the build commands will build out the studio first then will deploy the app. You should be able to access your live studio at `https://yourdomain.com/admin`
+
+Make sure to add .env variables to production on Vercel
+
+```
+NEXT_PUBLIC_SANITY_PROJECT_ID=YOUR_PROJECT_ID
+NEXT_PUBLIC_SANITY_DATASET=YOUR_DATASET
+```
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
