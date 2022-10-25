@@ -1,12 +1,13 @@
 import S from "@sanity/desk-tool/structure-builder";
-import { HiOutlineCog, HiOutlineDocumentAdd, HiOutlineHome, HiOutlinePlay } from "react-icons/hi";
+import { HiOutlineCog, HiOutlineDocumentAdd, HiOutlineHome, HiOutlinePlay, HiShoppingCart } from "react-icons/hi";
 
 // Add schema types to hidden
 const hiddenDocTypes = listItem =>
     ![
         "siteSettings", 
         "page", 
-        "portfolio" 
+        "portfolio",
+        "products" 
     ].includes(
         listItem.getId()
     );
@@ -36,14 +37,7 @@ export default () =>
             S.divider(),
             // add visial divider (optional)
             S.documentTypeListItem("page").title("Pages").icon(HiOutlineDocumentAdd),
-            S.listItem()
-                .title("Portfolio")
-                .icon(HiOutlinePlay)
-                .child(
-                    S.editor()
-                        .schemaType("portfolio")
-                        .documentId("d7bedd28-a64b-4253-b3a6-8720f632ff87")
-                ),
+            S.documentTypeListItem("products").title("Products").icon(HiShoppingCart),
                     
             // S.documentListItem()
             //     .id("d7bedd28-a64b-4253-b3a6-8720f632ff87")

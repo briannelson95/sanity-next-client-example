@@ -1,12 +1,12 @@
 {
   "root": true,
+  "api": {
+    "projectId": "y7bif9gn",
+    "dataset": "production"
+  },
   "project": {
     "name": "Example Client",
     "basePath": "/admin"
-  },
-  "api": {
-    "projectId": "vvys9c1a",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
