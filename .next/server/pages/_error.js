@@ -33,6 +33,16 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+/***/ "react":
+/*!*******************************************!*\
+  !*** external "next/dist/compiled/react" ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = require("next/dist/compiled/react");
+
+/***/ }),
+
 /***/ "../shared/lib/head":
 /*!***********************************************!*\
   !*** external "next/dist/shared/lib/head.js" ***!
@@ -40,16 +50,6 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/head.js");
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
-/***/ ((module) => {
-
-module.exports = require("react");
 
 /***/ })
 

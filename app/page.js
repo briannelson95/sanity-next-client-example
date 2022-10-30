@@ -5,7 +5,7 @@
 // for data that needs to be revalidated { next: { revalidate: 10 } }
 // for dynamic data that needs to be fresh on every fetch  { cache: 'no-store' }
 async function getData() {
-    const res = await fetch(process.env.NEXT_PUBLIC_SANITY_API, { next: { revalidate: 3600 } })
+    const res = await fetch(`https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2021-06-07/data/query/${process.envNEXT_PUBLIC_SANITY_DATASET}/?query=*[0]`, { next: { revalidate: 3600 } })
 
     return res.json()
 }

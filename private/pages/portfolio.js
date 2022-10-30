@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
-import { portfolioPage } from "../lib/queries"
-import { client } from "../lib/sanity"
+import Navbar from "../../components/Navbar";
+import { portfolioPage } from "../../lib/queries"
+import { client } from "../../lib/sanity"
 
 export default function Page({ data }) {
     const pageData = data.pageData[0];
