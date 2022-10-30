@@ -14,11 +14,11 @@ const nextConfig = {
 
 module.exports = {
   nextConfig,
-  experimental: {
-    images: {
-      allowFutureImage: true,
-    },
-  },
+  // experimental: {
+  //   images: {
+  //     allowFutureImage: true,
+  //   },
+  // },
   images: {
     domains: ['cdn.sanity.io'],
   },
