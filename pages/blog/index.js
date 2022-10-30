@@ -17,13 +17,13 @@ export default function Blog({ data }) {
         navData.push({title: nav[i].title, href: nav[i].slug.current})
     }
 
-    return(
+    return (
         <main>
             <Navbar navigation={navData} />
             <h1 className="text-2xl font-bold">{pageData.title}</h1>
             <section>
                 {blogs.map((item, index) => (
-                    <Link key={index} href={`blog/${item.slug.current}`}>
+                    <Link key={index} href={`blog/${item.slug.current}`} legacyBehavior>
                         <div className="border">
                             <Image src={urlFor(item.mainImage).url()} alt={item.mainImage.alt} width={160} height={90} />
                             {item.title}
@@ -32,7 +32,7 @@ export default function Blog({ data }) {
                 ))}
             </section>
         </main>
-    )
+    );
 }
 
 export async function getStaticProps() {
