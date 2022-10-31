@@ -27,7 +27,7 @@ export default function Layout({ children }) {
                                 {item.name}
                             </Link>
                         </li>
-                    ))} */}
+                    ))} */}<li>test</li>
                 </ul>
             </nav>
             {children}
