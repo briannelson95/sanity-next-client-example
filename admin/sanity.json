@@ -15,7 +15,8 @@
     "@sanity/desk-tool",
     "media-library",
     "asset-source-unsplash",
-    "dashboard-widget-document-list"
+    "dashboard-widget-document-list",
+    "@sanity/vision"
   ],
   "env": {
     "development": {

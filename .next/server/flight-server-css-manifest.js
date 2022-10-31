@@ -1,0 +1,1 @@
+self.__RSC_CSS_MANIFEST={"__entry_css__":{"/Users/briannelson/Documents/GitHub/client-example/app/page":[]}}
